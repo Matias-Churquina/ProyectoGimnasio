@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitma | Precios</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="mega-menu">
+      <h1 class="logo">
+        <a href="index.html">GYM <span>FITMA</span></a>
+      </h1>
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <input type="checkbox" id="menu-toggle">
+      <ul class="menu-principal">
+        <li ><a href="index.html">Inicio</a></li>
+        <li class="has-submenu">
+          <a href="#">Servicios</a>
+          <ul class="submenu">
+            <li><a href="clases.html">Clases</a></li>
+            <li><a href="entrenadores.html">Entrenadores</a></li>
+            <li><a href="precios.html">Precios</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenedor-precios">
+    <h1 class="titulo">Compará nuestros planes</h1>
+
+    <div class="toggle-precios">
+      <label>
+        <input type="checkbox" id="toggle-plan">
+        <span class="slider"></span>
+        <span class="etiqueta">Anual</span>
+      </label>
+    </div>
+
+    <section class="tabla-planes">
+
+      <div class="plan">
+        <div class="icono-plan">
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="#00aaff">
+            <circle cx="12" cy="12" r="10" fill="#dff6ff"/>
+            <path d="M8 12h8v2H8z" fill="#00aaff"/>
+          </svg>
+        </div>
+        <h2>Plan Básico</h2>
+        <p class="precio mensual">AR$ 5.000</p>
+        <p class="precio anual">AR$ 50.000</p>
+        <ul>
+          <li>Acceso a sala de musculación</li>
+          <li class="tooltip" data-tooltip="Acceso a caminadoras, bicis y elípticos">Zona Cardio</li>
+          <li>1 clase semanal</li>
+        </ul>
+        <a href="contacto.html" class="btn-contratar">Unirse</a>
+      </div>
+
+      <div class="plan destacado">
+        <div class="icono-plan">
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="#28a745">
+            <rect width="24" height="24" rx="4" fill="#dcfce7"/>
+            <path d="M12 6l4 6h-8l4-6z" fill="#28a745"/>
+          </svg>
+        </div>
+        <h2>Plan Premium</h2>
+        <p class="precio mensual">AR$ 8.500</p>
+        <p class="precio anual">AR$ 85.000</p>
+        <ul>
+          <li>Clases ilimitadas</li>
+          <li class="tooltip" data-tooltip="Incluye seguimiento nutricional">Nutricionista</li>
+          <li>Acceso 24/7</li>
+        </ul>
+        <a href="contacto.html" class="btn-contratar">Me interesa</a>
+      </div>
+
+      <div class="plan">
+        <div class="icono-plan">
+          <svg width="60" height="60" viewBox="0 0 24 24" fill="#ff9800">
+            <path d="M4 4h16v16H4z" fill="#fff8e1"/>
+            <path d="M6 10h12v2H6z" fill="#ff9800"/>
+            <path d="M6 14h12v2H6z" fill="#ff9800"/>
+          </svg>
+        </div>
+        <h2>Plan Dúo</h2>
+        <p class="precio mensual">AR$ 7.500</p>
+        <p class="precio anual">AR$ 75.000</p>
+        <ul>
+          <li>2 usuarios simultáneos</li>
+          <li>Clases ilimitadas</li>
+          <li class="tooltip" data-tooltip="Cada usuario accede con su propia cuenta">Cuentas separadas</li>
+        </ul>
+        <a href="contacto.html" class="btn-contratar">Contratar</a>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- FOOTER (Insertar el mismo footer que en las otras páginas) -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Newsletter -->
+      <div class="footer-section newsletter">
+        <h3>Suscribite al Newsletter</h3>
+        <form>
+          <input type="email" placeholder="Tu correo electrónico" required>
+          <button type="submit">Suscribirse</button>
+        </form>
+      </div>
+   
+      <!-- Redes Sociales -->
+      <div class="footer-section redes">
+        <h3>Seguinos</h3>
+        <div class="icons">
+          <a href="#"><img src="facebook.svg" alt="Facebook de Fitma"></a>
+          <a href="#"><img src="instagram.svg" alt="Instagram de Fitma"></a>
+          <a href="#"><img src="youtube.svg" alt="YouTube de Fitma"></a>
+        </div>
+      </div>
+  
+      <!-- Mapa -->
+      <div class="footer-section mapa">
+        <h3>Ubicación</h3>
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-65.317, -24.2, -65.293, -24.18&layer=mapnik"
+          style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+   
+    <div class="footer-bottom">
+      <p>&copy; 2025 Gimnasio FITMA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("toggle-plan");
+    toggle.addEventListener("change", () => {
+      document.body.classList.toggle("ver-anual", toggle.checked);
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blog de Fitness</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="mega-menu">
+      <h1 class="logo">
+        <a href="index.html">GYM <span>FITMA</span></a>
+      </h1>
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <input type="checkbox" id="menu-toggle">
+      <ul class="menu-principal">
+        <li ><a href="index.html">Inicio</a></li>
+        <li class="has-submenu">
+          <a href="#">Servicios</a>
+          <ul class="submenu">
+            <li><a href="clases.html">Clases</a></li>
+            <li><a href="entrenadores.html">Entrenadores</a></li>
+            <li><a href="precios.html">Precios</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="blog-container">
+    <h1 class="titulo-blog">Blog de Fitness</h1>
+
+    <div class="tags-filtro">
+      <input type="radio" name="tag" id="todos" checked>
+      <label for="todos">Todos</label>
+      <input type="radio" name="tag" id="nutricion">
+      <label for="nutricion">Nutrición</label>
+      <input type="radio" name="tag" id="entrenamiento">
+      <label for="entrenamiento">Entrenamiento</label>
+      <input type="radio" name="tag" id="salud">
+      <label for="salud">Salud</label>
+    </div>
+
+    <div class="entradas-blog">
+      <div class="entrada nutricion animada">
+        <h2>Plan alimenticio para fuerza</h2>
+        <p>Una guía detallada para mejorar tu rendimiento con nutrición deportiva.</p>
+        <span class="tag">Nutrición</span>
+      </div>
+
+      <div class="entrada entrenamiento animada">
+        <h2>Entrenamiento HIIT en casa</h2>
+        <p>Rutina intensa de 20 minutos para quemar grasa rápidamente.</p>
+        <span class="tag">Entrenamiento</span>
+      </div>
+
+      <div class="entrada salud animada">
+        <h2>Consejos para una vida activa</h2>
+        <p>Hábitos saludables para mantener un estilo de vida fitness.</p>
+        <span class="tag">Salud</span>
+      </div>
+
+      <div class="entrada nutricion animada">
+        <h2>Suplementos recomendados</h2>
+        <p>Proteínas, creatina y vitaminas para acompañar tu entrenamiento.</p>
+        <span class="tag">Nutrición</span>
+      </div>
+
+      <div class="entrada entrenamiento animada">
+        <h2>Rutina full-body para principiantes</h2>
+        <p>Empieza a entrenar con una rutina efectiva y sin lesiones.</p>
+        <span class="tag">Entrenamiento</span>
+      </div>
+
+      <div class="entrada salud animada">
+        <h2>La importancia del descanso</h2>
+        <p>Cómo dormir y recuperar tu cuerpo para crecer más fuerte.</p>
+        <span class="tag">Salud</span>
+      </div>
+    </div>
+    <section class="comentarios">
+        <h2>Comentarios</h2>
+      
+        <div class="comentario">
+          <div class="avatar usuario1"></div>
+          <div class="contenido-comentario">
+            <h3>Ana López</h3>
+            <p>Excelente contenido, me ayudó mucho con mi plan de entrenamiento.</p>
+          </div>
+        </div>
+      
+        <div class="comentario">
+          <div class="avatar usuario2"></div>
+          <div class="contenido-comentario">
+            <h3>Carlos Díaz</h3>
+            <p>¡Muy buenas recomendaciones! Espero más artículos sobre nutrición.</p>
+          </div>
+        </div>
+      
+        <div class="comentario">
+          <div class="avatar usuario3"></div>
+          <div class="contenido-comentario">
+            <h3>María Fernanda</h3>
+            <p>Me encantó la rutina de HIIT, la pondré en práctica.</p>
+          </div>
+        </div>
+      </section>      
+  </main>
+
+  <!-- FOOTER (Pegar aquí tu footer global) -->
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Newsletter -->
+      <div class="footer-section newsletter">
+        <h3>Suscribite al Newsletter</h3>
+        <form>
+          <input type="email" placeholder="Tu correo electrónico" required>
+          <button type="submit">Suscribirse</button>
+        </form>
+      </div>
+   
+      <!-- Redes Sociales -->
+      <div class="footer-section redes">
+        <h3>Seguinos</h3>
+        <div class="icons">
+          <a href="#"><img src="facebook.svg" alt="Facebook de Fitma"></a>
+          <a href="#"><img src="instagram.svg" alt="Instagram de Fitma"></a>
+          <a href="#"><img src="youtube.svg" alt="YouTube de Fitma"></a>
+        </div>
+      </div>
+  
+      <!-- Mapa -->
+      <div class="footer-section mapa">
+        <h3>Ubicación</h3>
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-65.317, -24.2, -65.293, -24.18&layer=mapnik"
+          style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+   
+    <div class="footer-bottom">
+      <p>&copy; 2025 Gimnasio FITMA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

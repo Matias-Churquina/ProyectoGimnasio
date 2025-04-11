@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Entrenadores | Gimnasio</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="mega-menu">
+      <h1 class="logo">
+        <a href="index.html">GYM <span>FITMA</span></a>
+      </h1>
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <input type="checkbox" id="menu-toggle">
+      <ul class="menu-principal">
+        <li ><a href="index.html">Inicio</a></li>
+        <li class="has-submenu">
+          <a href="#">Servicios</a>
+          <ul class="submenu">
+            <li><a href="clases.html">Clases</a></li>
+            <li><a href="entrenadores.html">Entrenadores</a></li>
+            <li><a href="precios.html">Precios</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="entrenadores">
+    <h1>Nuestros Entrenadores</h1>
+    <section class="tarjetas-entrenadores">
+
+      <!-- Músculación -->
+      <div class="tarjeta-flip">
+        <div class="tarjeta-inner">
+          <div class="tarjeta-front">
+            <img src="img/entrenador1.jpg" alt="Entrenador 1">
+            <h3>Lucas Ramírez</h3>
+          </div>
+          <div class="tarjeta-back">
+            <h4>Musculación</h4>
+            <p>Especialista en hipertrofia y fuerza muscular.</p>
+            <div class="skills">
+              <span>Fuerza</span>
+              <div class="barra fuerza"></div>
+              <span>Resistencia</span>
+              <div class="barra resistencia"></div>
+            </div>
+            <div class="rating">
+              <div class="stars">
+                <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star empty"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CrossFit -->
+      <div class="tarjeta-flip">
+        <div class="tarjeta-inner">
+          <div class="tarjeta-front">
+            <img src="img/entrenador2.jpg" alt="Entrenadora 2">
+            <h3>Valeria Torres</h3>
+          </div>
+          <div class="tarjeta-back">
+            <h4>CrossFit</h4>
+            <p>Entrenadora certificada, enfoque en entrenamiento funcional.</p>
+            <div class="skills">
+              <span>Agilidad</span>
+              <div class="barra agilidad"></div>
+              <span>Potencia</span>
+              <div class="barra potencia"></div>
+            </div>
+            <div class="rating">
+              <div class="stars">
+                <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Yoga -->
+      <div class="tarjeta-flip">
+        <div class="tarjeta-inner">
+          <div class="tarjeta-front">
+            <img src="img/entrenador3.jpg" alt="Entrenador 3">
+            <h3>Sofía Blanco</h3>
+          </div>
+          <div class="tarjeta-back">
+            <h4>Yoga</h4>
+            <p>Especialista en yoga integral y meditación.</p>
+            <div class="skills">
+              <span>Flexibilidad</span>
+              <div class="barra flexibilidad"></div>
+              <span>Concentración</span>
+              <div class="barra concentracion"></div>
+            </div>
+            <div class="rating">
+              <div class="stars">
+                <span class="star"></span><span class="star"></span><span class="star"></span><span class="star empty"></span><span class="star empty"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Spinning -->
+      <div class="tarjeta-flip">
+        <div class="tarjeta-inner">
+          <div class="tarjeta-front">
+            <img src="img/entrenador4.jpg" alt="Entrenador 4">
+            <h3>Martín Ruiz</h3>
+          </div>
+          <div class="tarjeta-back">
+            <h4>Spinning</h4>
+            <p>Entrenamientos de alta energía y motivación grupal.</p>
+            <div class="skills">
+              <span>Cardio</span>
+              <div class="barra cardio"></div>
+              <span>Resistencia</span>
+              <div class="barra resistencia"></div>
+            </div>
+            <div class="rating">
+              <div class="stars">
+                <span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Newsletter -->
+      <div class="footer-section newsletter">
+        <h3>Suscribite al Newsletter</h3>
+        <form>
+          <input type="email" placeholder="Tu correo electrónico" required>
+          <button type="submit">Suscribirse</button>
+        </form>
+      </div>
+   
+      <!-- Redes Sociales -->
+      <div class="footer-section redes">
+        <h3>Seguinos</h3>
+        <div class="icons">
+          <a href="#"><img src="facebook.svg" alt="Facebook de Fitma"></a>
+          <a href="#"><img src="instagram.svg" alt="Instagram de Fitma"></a>
+          <a href="#"><img src="youtube.svg" alt="YouTube de Fitma"></a>
+        </div>
+      </div>
+  
+      <!-- Mapa -->
+      <div class="footer-section mapa">
+        <h3>Ubicación</h3>
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-65.317, -24.2, -65.293, -24.18&layer=mapnik"
+          style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+   
+    <div class="footer-bottom">
+      <p>&copy; 2025 Gimnasio FITMA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

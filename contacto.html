@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto | Gimnasio</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="mega-menu">
+      <h1 class="logo">
+        <a href="index.html">GYM <span>FITMA</span></a>
+      </h1>
+      <label for="menu-toggle" class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <input type="checkbox" id="menu-toggle">
+      <ul class="menu-principal">
+        <li ><a href="index.html">Inicio</a></li>
+        <li class="has-submenu">
+          <a href="#">Servicios</a>
+          <ul class="submenu">
+            <li><a href="clases.html">Clases</a></li>
+            <li><a href="entrenadores.html">Entrenadores</a></li>
+            <li><a href="precios.html">Precios</a></li>
+          </ul>
+        </li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contacto">
+    <h1>Contacto</h1>
+
+    <form class="formulario-contacto" id="formulario" onsubmit="mostrarModal(event)">
+      <div class="campo">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required pattern="[A-Za-z\s]+" placeholder="Tu nombre completo">
+      </div>
+
+      <div class="campo">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+      </div>
+
+      <div class="campo">
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje..."></textarea>
+      </div>
+
+      <button type="submit">Enviar</button>
+
+      <div class="spinner" id="spinner" style="display: none;"></div>
+    </form>
+
+    <div class="modal" id="modal">
+      <div class="modal-contenido">
+        <h2>¡Mensaje enviado!</h2>
+        <p>Gracias por contactarnos. Nos comunicaremos pronto.</p>
+        <button onclick="cerrarModal()">Cerrar</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Newsletter -->
+      <div class="footer-section newsletter">
+        <h3>Suscribite al Newsletter</h3>
+        <form>
+          <input type="email" placeholder="Tu correo electrónico" required>
+          <button type="submit">Suscribirse</button>
+        </form>
+      </div>
+   
+      <!-- Redes Sociales -->
+      <div class="footer-section redes">
+        <h3>Seguinos</h3>
+        <div class="icons">
+          <a href="#"><img src="facebook.svg" alt="Facebook de Fitma"></a>
+          <a href="#"><img src="instagram.svg" alt="Instagram de Fitma"></a>
+          <a href="#"><img src="youtube.svg" alt="YouTube de Fitma"></a>
+        </div>
+      </div>
+  
+      <!-- Mapa -->
+      <div class="footer-section mapa">
+        <h3>Ubicación</h3>
+        <iframe
+          src="https://www.openstreetmap.org/export/embed.html?bbox=-65.317, -24.2, -65.293, -24.18&layer=mapnik"
+          style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+    </div>
+   
+    <div class="footer-bottom">
+      <p>&copy; 2025 Gimnasio FITMA. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    function mostrarModal(event) {
+      event.preventDefault();
+      const spinner = document.getElementById("spinner");
+      const modal = document.getElementById("modal");
+
+      spinner.style.display = "block";
+
+      setTimeout(() => {
+        spinner.style.display = "none";
+        modal.style.display = "flex";
+        document.getElementById("formulario").reset();
+      }, 2000);
+    }
+
+    function cerrarModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+</body>
+</html>
